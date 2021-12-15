@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+    
+}
+
+table, th, tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.workload {
+    width: 30px;
+    text-align: center;
+}
+
+#dataTable {
+    overflow: scroll;
+}
