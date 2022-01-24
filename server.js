@@ -36,17 +36,4 @@ if(process.env.NODE_ENV === 'development') {
     }) 
 }
 
-// if(process.env.NODE_ENV === 'production') {
-//     console.log('prod');
-//     app.use(express.static(path.join(__dirname, '/client/build')));
-//     app.get('*', (req, res) => {
-//         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-//     }) 
-// } else {
-//     console.log('dev');
-//     app.get('/', (req, res) => {
-//         res.send("API is running..");
-//     });
-// }
-
 const server = app.listen(PORT, () => console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`));
