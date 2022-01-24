@@ -12,7 +12,8 @@ const OrdersSchema = new mongoose.Schema({
     duedate: String,
     salesorder: String,
     solineitem: String,
-    buildtime: Number
+    buildtime: Number,
+    samesas: String
 })
 
 module.exports = mongoose.model('order', OrdersSchema);
