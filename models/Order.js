@@ -13,7 +13,8 @@ const OrdersSchema = new mongoose.Schema({
     salesorder: String,
     solineitem: String,
     buildtime: Number,
-    samesas: String
+    sameas: String,
+    sameasChildren: Array
 })
 
 module.exports = mongoose.model('order', OrdersSchema);
