@@ -14,7 +14,8 @@ const OrdersSchema = new mongoose.Schema({
     solineitem: String,
     buildtime: Number,
     sameas: String,
-    sameasChildren: Array
+    sameasChildren: Array,
+    child: Boolean
 })
 
 module.exports = mongoose.model('order', OrdersSchema);
